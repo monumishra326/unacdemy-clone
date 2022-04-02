@@ -29,7 +29,7 @@ function LiveClass() {
             title='Live'
             width='100%'
             height='80%'
-            src='https://www.youtube.com/watch?v=LystyOQzVSw'></iframe>
+            src='https://www.youtube.com/embed/3fjrpkb6hxg?autoplay=1&mute=1'></iframe>
           <Messages>Messages</Messages>
         </Seconddiv>
         <Thirddiv>
