@@ -25,11 +25,12 @@ function LiveClass() {
           <img src={banner} alt='banner' />
         </Firstdiv>
         <Seconddiv>
-          <iframe
-            title='Live'
-            width='100%'
-            height='80%'
-            src='https://www.youtube.com/embed/3fjrpkb6hxg?autoplay=1&mute=LystyOQzVSw'></iframe>
+//           <iframe
+//             title='Live'
+//             width='100%'
+//             height='80%'
+//             src='https://www.youtube.com/embed/UFnlZJcYc2I'></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UFnlZJcYc2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <Messages>Messages</Messages>
         </Seconddiv>
         <Thirddiv>
