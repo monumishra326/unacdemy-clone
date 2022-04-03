@@ -1,0 +1,2 @@
+# unacdemy-clone
+Unacademy is an Indian educational technology company, based in Bangalore. Originally created as a YouTube channel in 2010 by Gaurav Munjal, the company was founded in 2015 by Gaurav Munjal, Roman Saini, and Hemesh Singh. A privately held company, Unacademy has secured funding through a series of offerings. Tech Stack used MERN Stack Material UI Ant Design Firebase(for Mobile No. authentication) Styled Components
