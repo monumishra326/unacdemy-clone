@@ -29,8 +29,8 @@ function LiveClass() {
             title='Live'
             width='100%'
             height='80%'
-            src='https://www.youtube.com/embed/do8ipOE63ME?autoplay=1&fs=1&iv_load_policy=3&showinfo=0&rel=1&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com'></iframe>
-            
+            src='https://youtu.be/LystyOQzVSw'></iframe>
+          <Messages>Messages</Messages>
         </Seconddiv>
         <Thirddiv>
           <TabB>

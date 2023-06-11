@@ -1,72 +1,29 @@
-import React, { useEffect, useRef, useState } from 'react';
-import './App.css';
-import Home from './Components/Home/Home';
-import Navbar from './Components/Navbar/Navbar';
-import { ThemeContext } from './ContextProvider/ThemeContext';
+import logo from "./logo.svg";
+import "./App.css";
+import { Explore } from "./components/Explore/Explore";
+import { Goal } from "./components/Goal/Goal";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/landing_page/Home";
+import Payment from "./components/payment/payment";
+import { Tutor } from "./components/tutor_page/Tutor";
+import LiveClass from "./components/Live/LiveClass";
+
 
 function App() {
-	const [state, setState] = useState(false);
-	const { newTheme, open, handleMenu } =
-		React.useContext(ThemeContext);
-	const scrollRef = useRef();
+  return (
+    <div className="App">
+     
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/explore" element={<Explore />}></Route>
+        <Route path="/goal" element={<Goal />}></Route>
+        <Route path="/goal/tutor/:name" element={<Tutor />}></Route>
+        <Route path="/payment" element={<Payment />}></Route>
+        <Route path="/live" element={<LiveClass />}></Route>
 
-	useEffect(() => {
-		setTimeout(() => {
-			setState(true);
-		}, 2200);
-	}, []);
-
-	return (
-		<React.Fragment>
-			{!state ? (
-				<div
-					style={{
-						background: `${newTheme.background}`,
-					}}
-					className='logoStart'
-				>
-					<img style={{
-        width: 200, height: 200}}
-						src='https://raw.githubusercontent.com/monumishra326/Monu-portfolio/main/2d7814cd81b047e1b3735b5acbff250b__2_-removebg-preview.png'
-						alt='logo'
-					/>
-				</div>
-			) : (
-				<div className='components'>
-					<div
-						style={{
-							background: `${newTheme.menuBackground}`,
-							color: `${newTheme.title}`,
-							left: `${open ? '-100vw' : '0'}`,
-						}}
-						className='links'
-					>
-						<a onClick={handleMenu} href='#home'>
-							Home
-						</a>
-						<a onClick={handleMenu} href='#about'>
-							About
-						</a>
-						<a onClick={handleMenu} href='#experience'>
-							Experience
-						</a>
-
-						<a onClick={handleMenu} href='#projects'>
-							Projects
-						</a>
-						<a onClick={handleMenu} href='#techStacks'>
-							Profeciencies
-						</a>
-						<a onClick={handleMenu} href='#contact'>
-							Contact
-						</a>
-					</div>
-					<Navbar />
-					<Home scrollRef={scrollRef} />
-				</div>
-			)}
-		</React.Fragment>
-	);
+      </Routes>
+    </div>
+  );
 }
 
 export default App;

@@ -35,9 +35,9 @@ export default function PayClick() {
           typeof res.razorpay_payment_id == "undefined" ||
           res.razorpay_payment_id < 1
         ) {
-          window.location.href = "https://unacdemy.vercel.app/live";
+          window.location.href = "";
         } else {
-          window.location.href = "https://unacdemy.vercel.app/live";
+          window.location.href = "";
         }
       },
       prefill: {
@@ -53,7 +53,9 @@ export default function PayClick() {
       },
     };
 
-    alert("Your Plan will be activated with in minute");
+    alert("Your Plan will be activated with in one minute");
+
+
 
     const rzpay = new Razorpay(options);
     rzpay.open();
